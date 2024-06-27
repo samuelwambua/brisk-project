@@ -1,0 +1,171 @@
+* {
+    /* transition: background-color 300ms ease, color 300ms ease; */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+*:focus {
+    /* background-color: rgba(221, 72, 20, .2); */
+    outline: none;
+}
+html, body {
+    width:100%;
+    color: rgba(33, 37, 41, 1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+header {
+    /* background-color: rgba(247, 248, 249, 1); */
+    padding: 0;
+}
+.menu {
+    padding: 0 2rem;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: right;
+}
+header li {
+    display: inline-block;
+}
+header li a {
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .5);
+    display: block;
+    height: 44px;
+    text-decoration: none;
+}
+header li.menu-item a {
+    border-radius: 5px;
+    margin: 5px 0;
+    height: 38px;
+    line-height: 36px;
+    padding: .4rem .65rem;
+    text-align: center;
+    color: #000;
+}
+header li.menu-item a:hover,
+header li.menu-item a:focus {
+    /* background-color: rgba(221, 72, 20, .2); */
+    color: rgba(221, 72, 20, 1);
+}
+header .logo {
+    float: left;
+    height: 60px;
+    padding: .4rem .5rem;
+}
+header .menu-toggle {
+    display: none;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+header .menu-toggle button {
+    background-color: rgba(221, 72, 20, .6);
+    border: none;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.3rem;
+    height: 36px;
+    padding: 0;
+    margin: 11px 0;
+    overflow: visible;
+    width: 40px;
+}
+header .menu-toggle button:hover,
+header .menu-toggle button:focus {
+    background-color: rgba(221, 72, 20, .8);
+    color: rgba(255, 255, 255, .8);
+}
+.heroes-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+.heroes-block{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 60px;
+    padding-top: 20px;
+
+}
+
+.heroes-h3{
+    padding-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.heroes-text-block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid blue; */
+    padding-inline: 60px;
+
+}
+.heroes-text{
+    width: 24%;
+    height: 95px;
+    background-color: blue;
+    border-radius: 7%;
+
+}
+.border-radius-7{
+    border:none;
+    border-radius: 7%;
+}
+.blog-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    width: 24%;
+    height: 95%;
+    /* background-image: url("../images/pexels-shkrabaanthony-5475760.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:#ffffff;
+    z-index: 1;
+
+    &:nth-child(1){
+        background-image: url("../images/pexels-shkrabaanthony-5475760.jpg"); 
+    }
+    &:nth-child(2){
+        background-image: url("../images/pexels-cup-of-couple-6177595.jpg");
+    }
+    &:nth-child(3){
+        background-image: url("../images/pexels-junior-teixeira-1064069-2047905.jpg");
+    }
+    &:nth-child(4){
+        background-image: url("../images/pexels-sharad-3937174.jpg");}
+
+    
+}
+
+/* .blog-cards::before{
+    content: "";
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+} */
+
+
+

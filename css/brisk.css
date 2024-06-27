@@ -1,0 +1,319 @@
+* {
+    /* transition: background-color 300ms ease, color 300ms ease; */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+*:focus {
+    /* background-color: rgba(221, 72, 20, .2); */
+    outline: none;
+}
+html, body {
+    width:100%;
+    color: rgba(33, 37, 41, 1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+header {
+    /* background-color: rgba(247, 248, 249, 1); */
+    padding: 0;
+}
+.menu {
+    padding: 0 2rem;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: right;
+}
+header li {
+    display: inline-block;
+}
+header li a {
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .5);
+    display: block;
+    height: 44px;
+    text-decoration: none;
+}
+header li.menu-item a {
+    border-radius: 5px;
+    margin: 5px 0;
+    height: 38px;
+    line-height: 36px;
+    padding: .4rem .65rem;
+    text-align: center;
+    color: #000;
+}
+header li.menu-item a:hover,
+header li.menu-item a:focus {
+    /* background-color: rgba(221, 72, 20, .2); */
+    color: rgba(221, 72, 20, 1);
+}
+header .logo {
+    float: left;
+    height: 60px;
+    padding: .4rem .5rem;
+}
+header .menu-toggle {
+    display: none;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+header .menu-toggle button {
+    background-color: rgba(221, 72, 20, .6);
+    border: none;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.3rem;
+    height: 36px;
+    padding: 0;
+    margin: 11px 0;
+    overflow: visible;
+    width: 40px;
+}
+header .menu-toggle button:hover,
+header .menu-toggle button:focus {
+    background-color: rgba(221, 72, 20, .8);
+    color: rgba(255, 255, 255, .8);
+}
+.top-menu{
+    /* background-image: url("../images/cool-background.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    width: 100%;
+    position: relative;
+}
+
+.top-menu::before{
+    z-index:-5;
+    content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+    background-image: url("../images/cool-background.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heroes-text{
+    font-family: "Syne", sans-serifs;
+     font-size: 42px; color: #A9A9A9;
+     line-height: 1.2;
+}
+.text-blue{
+    color: #3b559b;
+}
+.innovative-text{
+    font-size: 24px; text-align: left; padding-left: 40px;
+color: #A9A9A9; font-family: poppins;
+}
+.elevate{
+    justify-content:space-around;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+
+}
+.elevate{
+    background: none;
+}
+.elevate-text{
+    display: flex;
+    flex-direction: column;
+}
+.elevate h3{
+    font-size: 22px;
+}
+.elevate p{
+    font-size: 16px;
+}
+.elevate-img{
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px;
+    float: right; 
+}
+.heroes-container{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 5em;
+    padding-inline: 3rem;
+    /* padding-block: 3rem; */
+}
+.img-iridescent{
+    width: 100%;
+}
+
+.img-iridescent img{
+    width:100%;
+    height: 60vh;
+}
+.innovative{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.innovative-text{
+font-family: Syne, sans-serif;
+font-size: 30px;
+margin-bottom: 6rem;
+}
+.innovative-img{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.cubes{
+    background-image: url("../images/cubes.png");
+    width:25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding-left: 30px; */
+
+}
+.cluster-innovative{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.cluster-txt{
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    padding-block: 10px;
+}
+.numbers{
+    font-size: 32px;
+    font-weight: bold;
+    color: #3b559b;
+    padding-bottom: 10px;
+}
+.delivering{
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+hr{
+    border: 1px solid black;
+}
+.operation{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.code-photo{
+    width: 250px;
+    height: 31vh;
+}
+.years-op{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: space-between;
+    height: 31vh;
+}
+.years{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+#slideshow{
+    display: flex;
+    flex-direction: column;
+}
+.slide-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.slide{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.slide h3{
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 15px;
+    font-size: 26px;
+    border-bottom: 1px solid black;
+}
+.slide p{
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 86px;
+    font-size: 16px;
+}
+.proficient{
+    background-color: #3b559b;
+    height: 120vh;
+}
+.txt-proficient{
+    text-align: center;
+    font-family: Syne, sans-serif;
+    color: #ffffff;
+    line-height: 2;
+    font-size: 44px;
+    padding-top: 200px;
+    letter-spacing: 2px;
+}
+.expertise-block{
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    padding-inline: 40px;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 120vh;
+}
+.expertise-block h2{
+    font-family: Syne, sans-serif;
+    color: blue;
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+.expertise-txt{
+    /* width: 50%; */
+    color: #A9A9A9;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    line-height: 3;
+    padding-bottom: 70px;
+}
+.expertise-txt-border{
+    border-bottom: 1px solid #A9A9A9;
+}
+.editor{
+    border: 1px solid black;
+    width: 100%;
+    padding-inline: 30px;
+}
+
+
